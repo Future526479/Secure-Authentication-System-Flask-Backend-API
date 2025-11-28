@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form method="POST">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            <p class="{{ category }}">{{ message }}</p>
+        {% endfor %}
+        {% endwith %}
+        {{ form.csrf_token }}
+        {{ form.email (placeholder="Email") }}<br><br>
+        {{ form.password (placeholder="Password") }}<br><br>
+        <button type="submit">Submit</button><br><br>
+        <a href="{{ url_for('Sign')}}">Sign up</a>
+    </form>
+</body>
+</html>
