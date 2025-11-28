@@ -56,7 +56,7 @@ Project Structure:
     Serve as a portfolio project for junior backend roles
     Showcase understanding of production-level security concepts
 
-📈 Future Improvements
+📈 Future Improvements: 
   🔐 JWT Authentication (API mode)
   👤 Admin & User role system
   🔁 Password reset via email
